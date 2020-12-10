@@ -402,11 +402,71 @@ section#sixth{
     grid-template-columns: repeat(1,1fr);
 }
 
-section#sixth p{
+section#sixth p#title{
 	margin:auto;
 	position: relative;
 	font-size: 48px;
 	font-weight: lighter;
 	text-transform: uppercase;
+}
+
+.list ul{
+	list-style: none;
+}
+
+.tobe{
+	margin:auto;
+	display: grid;
+	grid-template-columns: 350px auto;
+}
+
+.input{
+	display: grid;
+	grid-template-columns: 460px auto;
+}
+
+
+
+input{
+	width: 180px;
+	height: 35px;
+	margin-bottom: 40px;
+	margin-left: 30px;
+	background-color:rgba(51, 51, 51, 1);
+	border: 1px solid rgba(97, 97, 97, 1);
+}
+
+textarea{
+	height: 116px;
+	width: 310px;
+	background-color:rgba(51, 51, 51, 1);
+
+}
+
+.text{
+	position: relative;
+	display: grid;
+	grid-template-columns: 600px auto;
+	width: 770px;
+	margin: 0px;
+	margin-left: 30px;
+}
+
+#aa{
+	margin: 0px;
+	color: rgba(152, 152, 152, 1);
+	font-size: 12px;
+	font-family: Open Sans;
+
+}
+#go{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	margin: 0px;
+	margin-right: 25px;
+	background: rgba(209, 169, 84, 1);
+	width: 190px;
+height: 50px;
 }
 
