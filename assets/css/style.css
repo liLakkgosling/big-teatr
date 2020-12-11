@@ -22,7 +22,7 @@ aside{
 aside ul{
 	list-style:none;
 	position:absolute;
-	bottom: 100px;
+	bottom: 250px;
 	display: grid;
 	grid-template-columns: repeat(1,1fr);
 	grid-gap:45px;
@@ -55,7 +55,7 @@ aside ul li p{
 	top:0px;
 	background: url(../img/first/Rectangle3.png) no-repeat;
 	background-size: 100%;
-	
+	width: auto;
 	height: 1045px;
 }
 
@@ -84,11 +84,11 @@ section#first{
 	width: 1110px;
 	margin:auto;
 	display: grid;
-	grid-template-columns: repeat(2,1fr);
+	grid-template-columns: 600px auto;
 
 }
 
-#txt,#imge{
+#txt,.wrapper{
 	top: 191px;
 	position: relative;
 }
@@ -115,11 +115,11 @@ section#first{
 
 }
 
-div#imge{
+div.wrapper{
 	position: relative;
 }
 
-div#imge div#image{
+div.wrapper div.slider{
 	padding-left: 125px;
 }
 
@@ -192,12 +192,13 @@ section#third{
 	text-transform: uppercase;
 }
 
- section#third div.wrapper{
+ section#third div.wrapper1{
 	position: relative;
+	margin: auto;
 	
  }
 
- section#third div.wrapper div.slidercss{
+ section#third div.wrapper1 div.slidercss{
 	position: relative;
 	display: grid;
 	grid-template-columns: 443px 443px 443px 443px;
@@ -212,7 +213,7 @@ section#third{
  	position: absolute;
  }
 
-.slider_item1,.slider_item2,.slider_item3,.slider_item4{
+.slider_iten1,.slider_iten2,.slider_iten3,.slider_iten4{
 	position: relative;
 
 	
@@ -240,7 +241,7 @@ section#third{
 
 
 
-.slider_item1 p#up,.slider_item2 p#up,.slider_item3 p#up,.slider_item4 p#up{
+.slider_iten1 p#up,.slider_iten2 p#up,.slider_iten3 p#up,.slider_iten4 p#up{
 	position: absolute;
 	left: 40px;
 	top: 40px;
@@ -249,7 +250,7 @@ section#third{
 	z-index: 3;
 
 }
-.slider_item1 p#down,.slider_item2 p#down,.slider_item3 p#down,.slider_item4 p#down{
+.slider_iten1 p#down,.slider_iten2 p#down,.slider_iten3 p#down,.slider_iten4 p#down{
 	position: absolute;
 	transform: rotate(-90deg);
 	bottom: 39px;
@@ -258,7 +259,7 @@ section#third{
 
 
 
-.slider_item1:hover .passiv{
+.slider_iten1:hover .passiv{
 	 opacity: 0;
   
 }
@@ -266,37 +267,37 @@ section#third{
 	content: '›';
   
 }
-.slider_item1:hover .round_case{
+.slider_iten1:hover .round_case{
 	 opacity: 1;
   
 }
 
-.slider_item2:hover .passiv{
+.slider_iten2:hover .passiv{
 	 opacity: 0;
   
 }
 
-.slider_item2:hover .round_case{
+.slider_iten2:hover .round_case{
 	 opacity: 1;
   
 }
 
-.slider_item3:hover .passiv{
+.slider_iten3:hover .passiv{
 	 opacity: 0;
   
 }
 
-.slider_item3:hover .round_case{
+.slider_iten3:hover .round_case{
 	 opacity: 1;
   
 }
 
-.slider_item4:hover .passiv{
+.slider_iten4:hover .passiv{
 	 opacity: 0;
   
 }
 
-.slider_item4:hover .round_case{
+.slider_iten4:hover .round_case{
 	 opacity: 1;
   
 }
@@ -412,6 +413,7 @@ section#sixth p#title{
 
 .list ul{
 	list-style: none;
+	padding: 0px;
 }
 
 .tobe{
@@ -431,7 +433,7 @@ input{
 	width: 180px;
 	height: 35px;
 	margin-bottom: 40px;
-	margin-left: 30px;
+	margin-right: 30px;
 	background-color:rgba(51, 51, 51, 1);
 	border: 1px solid rgba(97, 97, 97, 1);
 }
@@ -449,7 +451,7 @@ textarea{
 	grid-template-columns: 600px auto;
 	width: 770px;
 	margin: 0px;
-	margin-left: 30px;
+
 }
 
 #aa{
@@ -464,9 +466,77 @@ textarea{
 	right: 0px;
 	bottom: 0px;
 	margin: 0px;
-	margin-right: 25px;
+	
 	background: rgba(209, 169, 84, 1);
 	width: 190px;
 height: 50px;
 }
+
+footer{
+	margin: auto;
+	position: relative;
+	
+	display: grid;
+	grid-template-columns: repeat(1,1fr);
+}
+
+.container{
+	margin:auto;
+}
+
+#linia{
+	height: 2px;
+	border: 1px solid;
+	background-color: rgba(152, 152, 152, 1);
+	border-color:rgba(152, 152, 152, 1);
+	width: 1110px;
+}
+
+#typText{
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+
+#typText p{
+	color:rgba(152, 152, 152, 1);
+
+}
+#right1{
+	right: 0px;
+	margin-right: 0px;
+	position: absolute;
+	color:rgba(152, 152, 152, 1);
+
+}
+
+
+@media screen and (max-width: 992px) {
+	.wrapper{
+		display: none;
+	}
+	section#first{
+		grid-template-columns: repeat(1,1fr);
+	}
+	nav ul{
+		grid-template-columns: repeat(5,1fr);
+
+		padding-left: 150px;
+	}
+	li#number{
+		position: absolute;
+		left: 40%;
+		top: 125px;
+	}
+	div#txt{
+		padding-left: 150px;
+		width: 540px;
+		margin-bottom: 150px;
+
+	}
+	div#divfirst{
+		width: auto;
+	}
+}
+
 
