@@ -249,7 +249,7 @@ section#third{
 
 
 
-.slider_iten1 p#up,.slider_iten2 p#up,.slider_iten3 p#up,.slider_iten4 p#up{
+.slider_iten1 p.up,.slider_iten2 p.up,.slider_iten3 p.up,.slider_iten4 p.up{
 	position: absolute;
 	left: 40px;
 	top: 40px;
@@ -258,7 +258,7 @@ section#third{
 	z-index: 3;
 
 }
-.slider_iten1 p#down,.slider_iten2 p#down,.slider_iten3 p#down,.slider_iten4 p#down{
+.slider_iten1 p.down,.slider_iten2 p.down,.slider_iten3 p.down,.slider_iten4 p.down{
 	position: absolute;
 	transform: rotate(-90deg);
 	bottom: 39px;
@@ -462,7 +462,7 @@ textarea{
 
 }
 
-#aa{
+.aa{
 	margin: 0px;
 	color: rgba(152, 152, 152, 1);
 	font-size: 12px;
